@@ -17,82 +17,22 @@ x+=4;
 }
 void draw()
 {
-  
-    for(int h = 0; h <= 500; h+=100)
+  int z = -10;
+    for(int h = 470; h >= -80; h-=30)
     {
-     scale(h,470);
+   while(z<=550)
+   {
+     scale(z,h);
+     z+=100;
     }
-     for(int h = -50; h <= 500; h+=100)
-    {
-     scale(h,440);
+    if(z==590)
+   {
+     z=-60;
     }
-  for(int h = 0; h <= 500; h+=100)
+    else
     {
-     scale(h,410);
-   }
- for(int h = -50; h <= 500; h+=100)
-    {
-     scale(h,380);
-   }
-     for(int h = 0; h <= 500; h+=100)
-    {
-     scale(h,350);
+    z=-10;
     }
-     for(int h = -50; h <= 500; h+=100)
-    {
-     scale(h,320);
-   }
-    for(int h = 0; h <= 500; h+=100)
-    {
-     scale(h,290);
-    }
-      for(int h = -50; h <= 500; h+=100)
-    {
-     scale(h,260);
-   }
-  for(int h = 0; h <= 500; h+=100)
-    {
-     scale(h,230);
-    }
-      for(int h = -50; h <= 500; h+=100)
-    {
-     scale(h,200);
-   }
-  for(int h = 0; h <= 500; h+=100)
-    {
-     scale(h,170);
-    }
-      for(int h = -50; h <= 500; h+=100)
-    {
-     scale(h,140);
-   }
-  for(int h = 0; h <= 500; h+=100)
-    {
-     scale(h,110);
-    }
-      for(int h = -50; h <= 500; h+=100)
-    {
-     scale(h,80);
-   }
-  for(int h = 0; h <= 500; h+=100)
-    {
-     scale(h,50);
-    }
-      for(int h = -50; h <= 500; h+=100)
-    {
-     scale(h,20);
-   }
-  for(int h = 0; h <= 500; h+=100)
-    {
-     scale(h,-10);
-    }
-     for(int h = -50; h <= 500; h+=100)
-    {
-     scale(h,-40);
-   }
-    for(int h = 0; h <= 500; h+=100)
-    {
-     scale(h,-70);
-    }
+}
 }
 
